@@ -1,0 +1,204 @@
+<style>
+        #Home { background-color:whitesmoke;}
+        #Site_Details { background-color:snow;}
+        #Dredger_Details { background-color:ghostwhite;}
+        img { width:800px;
+              height:500px
+        }
+    </style>
+    <style type="text/css">
+        td, th { border: 1px solid #CCC; }
+        table {border: 1px solid black; }
+    </style>
+    <SCRIPT language=Javascript>
+        <!--
+        function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+
+        return true;
+        }
+        //-->
+    </SCRIPT>
+
+!-- Start of first page: #Home -->
+    <div data-role="page" id="Home">
+
+        <div data-role="header" data-theme="a">
+            <h1><strong><font size="5">WELCOME</font></strong></h1>
+        </div>
+        <!-- /header -->
+
+        <p><font size="30"><strong>Welcome.</strong></font></p>
+
+        <img src="img/Image31.jpg" /><br />
+
+        <p><a href="#Site_Details" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b">Please click here to continue.</a></p>
+
+        <div data-role="footer" data-position="fixed" data-theme="a">
+            <h1><strong><font size="5">WELCOME</font></strong></h1>
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page one -->
+
+    <!-- Start of Second page: #Site_Details -->
+    <div data-role="page" id="Site_Details">
+
+    <div data-role="header" data-theme="a">
+ <h1><strong><font size="3">SITE AND DREDGER'S NAME AND TARGET.</font></strong></h1>
+    </div>
+    <!-- /header -->
+
+    <div style="color:blue">
+    <p><font size="5">Please fill in the following details.</font></p>
+    </div>
+
+    <form>
+        <label for="textinput-s"><font size="6"><strong>Site:</strong></font></label>
+        <input name="textinput-s" id="textinput-s" placeholder="SIte..." value="" data-clear-btn="true" type="text" data-theme="d" /><br />
+    </form>
+
+    <form>
+        <label for="textinput-s"><font size="6"><strong>Dredger Name:</strong></font></label>
+        <input name="textinput-s" id="text1" placeholder="Dreder Name..." value="" data-clear-btn="true" type="text" data-theme="d" /><br />
+    </form>
+
+    <form>
+        <label for="textinput-s"><font size="6"><strong>Daily Dredger Target:</strong></font></label>
+        <input name="textinput-s" id="text2" placeholder="Dreder Target..." value="" data-clear-btn="true" type="text" data-theme="d" /><br />
+    </form>
+
+    <form>
+        <input data-role="none" value="Save" type="submit">
+        <input data-role="none" value="Reset" type="submit">
+    </form>
+ <p><a href="#Dredger_Details" class="ui-btn ui-btn-inline">Please click here to continue.</a></p>
+
+    <div data-role="footer" data-position="fixed" data-theme="a">
+        <h1><strong><font size="3">SITE AND DREDGER'S NAME AND TARGET.</font></strong></h1>
+    </div>
+    <!-- /footer -->
+
+    </div>
+    <!-- /page two -->
+
+    <!-- Start of Third page: #Dredger_Details -->
+    <div data-role="page" id="Dredger_Details">
+
+        <div data-role="header" data-position="fixed" data-theme="a">
+        <h1><strong><font size="5">DREDGER ACTIVITY.</font></strong></h1>
+    </div>
+    <!-- /header -->
+
+    <table>
+        <tr>
+            <th>
+                <font color="blue" size="5"><strong>Date:</strong></font>
+            </th>
+            <th colspan="8">
+                <label for="date"></label>
+                <input type="date" name="date" id="date1" value=""  />
+  </th>
+        </tr>
+
+        <tr>
+            <td>
+                <form>
+                    <h4>Start Time:</h4>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="time"></label>
+                    <input type="time" name="time" id="time" value="" />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form>
+                    <h4>End Time:</h4>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="time"></label>
+                    <input type="time" name="time" id="time1" value="" />
+   </form>
+            </td>
+        </tr>
+
+        <tr >
+            <td>
+                <strong>Effective Dredging(Mins):</strong>
+            </td>
+            <td>
+                <input id="txtChar" onkeypress="return isNumberKey(event)" type="number" name="txtChar" placeholder="Effective Dredging(Mins)..." />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong>Other Activities/Downtime(Mins):</strong>
+            </td>
+            <td>
+                <form>
+                    <input id="Number1" onkeypress="return isNumberKey(event)" type="number" name="txtChar" placeholder="Other Activities/Downtime(Mins)..." />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong>Main Eng(Hrs):</strong>
+  </td>
+            <td>
+                <form>
+                    <input id="Number2" onkeypress="return isNumberKey(event)" type="number" name="txtChar" placeholder="Main Eng(Hrs)..." />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong>Aux Eng(Hrs):</strong>
+            </td>
+            <td>
+                <form>
+                    <input id="Number3" onkeypress="return isNumberKey(event)" type="number" name="txtChar" placeholder="Aux Eng(Hrs)..." />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+ <td>
+                <strong>Main Eng  Av. Diesel Usage (Ltrs/h):</strong>
+            </td>
+            <td>
+                <form>
+                    <input id="Number4" onkeypress="return isNumberKey(event)" type="number" name="txtChar" placeholder="Main Eng  Av. Diesel Usage (Ltrs/h)..." />
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong>Comments:</strong>
+            </td>
+            <td>
+                <div data-role="fieldcontain" style="padding:10px; margin:10px; ">
+                    <textarea cols="500" rows="100" name="textarea" placeholder="Comments..." id="textarea5" style="height:300px;"></textarea>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <input data-role="none" value="Save" type="submit">
+        <input data-role="none" value="Reset" type="submit">
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-b">Cancle</a>
+    </form>
